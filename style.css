@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.back{
+    background-image: url(imgs/back2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0px 70px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.logo{
+    width: 10em;
+}
+ul{
+    display: flex;
+    gap: 40px;
+}
+ul li a{
+    color: white;
+    font-weight: bold;
+}
+.contato{
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+.home{
+    border-bottom: 2px solid white;
+}
+.msg{
+    display: block;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    border-right: 16px solid #f1e100;
+    width: 18ch;
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation: mark .5s step-end infinite,write 3s steps(22,end) infinite;
+}
+
+@keyframes mark{
+    50%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes write{
+    0%{
+        width: 0;
+    }
+}
+.dev{
+    color: #f1e100;
+}
+.sec_1{
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 200px 200px;
+}
+h2{
+    color: white;
+}
+.redes{
+    width:2.5em;
+    height: 2.5em;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.sociais{
+    display: flex;
+    gap: 10px;
+}
+.skills{
+    width: 3em;
+}
+main{
+    display: flex;
+    align-items: center;
+}
+.sec_2{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.eu_sei{
+    margin: 40px 0px;
+    background-color: rgba(0, 0, 0, 0.177);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+   height: 80vh;
+   justify-content: space-evenly;
+}
+.nome{
+    color: #f1e100;
+    font-size: 20px;
+}
